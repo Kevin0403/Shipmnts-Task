@@ -26,7 +26,7 @@ public class ContactService {
     }
 
     public Contact addContact(Contact contact) {
-        Company c = companyRepository.findByName(contact.getCompantName());
+        Company c = companyRepository.findByName(contact.getCompanyName());
         if(c == null) {
             return null;
         }else {

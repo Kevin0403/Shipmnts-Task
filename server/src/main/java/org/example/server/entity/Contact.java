@@ -10,44 +10,52 @@ public class Contact {
     @GeneratedValue
     private int id;
 
-    public String getContactType() {
-        return ContactType;
-    }
-
-    public void setContactType(String contactType) {
-        ContactType = contactType;
-    }
-
-    public Date getBirth() {
-        return Birth;
-    }
-
-    public void setBirth(Date birth) {
-        Birth = birth;
-    }
-
-    public String getPhone() {
-        return Phone;
-    }
-
-    public void setPhone(String phone) {
-        Phone = phone;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
-
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public Date getBirth() {
+        return birth;
+    }
+
+    public void setBirth(Date birth) {
+        this.birth = birth;
+    }
+
+    public String getContactType() {
+        return contactType;
+    }
+
+    public void setContactType(String contactType) {
+        this.contactType = contactType;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     public int getId() {
@@ -58,13 +66,13 @@ public class Contact {
         this.id = id;
     }
 
-    private String Name;
-    private String Email;
-    private String Phone;
+    private String name;
+    private String email;
+    private String phone;
 
     @Temporal(TemporalType.DATE)
-    private Date Birth;
-    private String ContactType;
+    private Date birth;
+    private String contactType;
 
     @ManyToOne
     private Company company;
@@ -73,19 +81,12 @@ public class Contact {
         return company;
     }
 
-    public String getCompantName() {
-        return CompantName;
-    }
-
-    public void setCompantName(String compantName) {
-        CompantName = compantName;
-    }
 
     public void setCompany(Company company) {
         this.company = company;
     }
 
     @Transient
-    private String CompantName;
+    private String companyName;
 
 }

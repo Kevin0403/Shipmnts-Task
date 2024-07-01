@@ -43,14 +43,14 @@ function View() {
               <tbody>
                 {company.map((row, index) => (
                   <tr key={index}>
-                    <td>{row["Name"] || ""}</td>
-                    <td>{row["Address"] || ""}</td>
-                    <td>{row["Phone"] || ""}</td>
-                    <td>{row["Email"] || ""}</td>
-                    <td>{row["Website"] || ""}</td>
-                    <td>{row["Employees"] || ""}</td>
-                    <td>{row["FoundedDate"] || ""}</td>
-                    <td>{row["IndustryType"] || ""}</td>
+                    <td>{row["name"] || ""}</td>
+                    <td>{row["address"] || ""}</td>
+                    <td>{row["phone"] || ""}</td>
+                    <td>{row["email"] || ""}</td>
+                    <td>{row["website"] || ""}</td>
+                    <td>{row["employees"] || ""}</td>
+                    <td>{row["foundedDate"] || ""}</td>
+                    <td>{row["industryType"] || ""}</td>
                   </tr>
                 ))}
               </tbody>
@@ -74,11 +74,11 @@ function View() {
               <tbody>
                 {contact.map((row, index) => (
                   <tr key={index}>
-                    <td>{row["Name"] || ""}</td>
-                    <td>{row["Email"] || ""}</td>
-                    <td>{row["Phone"] || ""}</td>
-                    <td>{row["Date of Birth"] || ""}</td>
-                    <td>{row["Contact Type"] || ""}</td>
+                    <td>{row["name"] || ""}</td>
+                    <td>{row["email"] || ""}</td>
+                    <td>{row["phone"] || ""}</td>
+                    <td>{row["birth"] || ""}</td>
+                    <td>{row["contactType"] || ""}</td>
                   </tr>
                 ))}
               </tbody>
