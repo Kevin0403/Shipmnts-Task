@@ -9,6 +9,7 @@ function Form() {
   const [data, setData] = React.useState([]);
 
   const validate = ({file}) => {
+    setData(() => []);
     console.log(file[0]);
     const reader = new FileReader();
 
@@ -19,8 +20,7 @@ function Form() {
         const sheet = workbook.Sheets[sheetName];
         const sheetData = XLSX.utils.sheet_to_json(sheet);
 
-        setData((data) => [...data, sheetData]);
-
+        setData((data) => [...data, ...sheetData]);
       }
     };
 
