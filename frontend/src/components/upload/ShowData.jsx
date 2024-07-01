@@ -48,13 +48,28 @@ function ShowData({ data }) {
     // call the backend url to upload the data
     if (company.length > 0) {
       await axios.post("http://localhost:8080/api/company", {
-        company: company,
+        company: company.map((row) => ({
+          name: row["Name"],
+          address: row["Address"],
+          phone: row["Phone"],
+          email: row["Email"],
+          website: row["Website"],
+          employees: row["Number of Employees"],
+          foundedDate: row["Founded Date"],
+          industryType: row["Industry"],
+        }))
       });
     }
 
     if (contact.length > 0) {
       await axios.post("http://localhost:8080/api/contact", {
-        contact: contact,
+        contact: contact.map((row) => ({
+          name: row["Name"],
+          email: row["Email"],
+          phone: row["Phone"],
+          dateOfBirth: row["Date of Birth"],
+          contactType: row["Contact Type"],
+        }))
       });
     }
   };
