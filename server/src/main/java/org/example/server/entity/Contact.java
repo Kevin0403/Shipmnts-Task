@@ -66,6 +66,26 @@ public class Contact {
     private Date Birth;
     private String ContactType;
 
+    @ManyToOne
     private Company company;
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public String getCompantName() {
+        return CompantName;
+    }
+
+    public void setCompantName(String compantName) {
+        CompantName = compantName;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    @Transient
+    private String CompantName;
 
 }
