@@ -30,7 +30,11 @@ function Form() {
 
   return (
     <div>
+      <label className=" text-red-800">
+        First add company data and then contact data
+        </label>
       <form onSubmit={handleSubmit(validate)} className=" flex gap-3 items-center justify-center"  action="">
+        
         <input
           type="file"
           className="file-input file-input-bordered file-input-primary w-full max-w-xs"
