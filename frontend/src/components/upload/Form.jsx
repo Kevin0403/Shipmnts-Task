@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from 'react-hook-form';
 import * as XLSX from 'xlsx'; 
-import ShowData from '../ShowData';
+import ShowData from './ShowData';
 
 function Form() {
 

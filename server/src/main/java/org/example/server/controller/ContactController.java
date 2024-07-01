@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/contact")
+@CrossOrigin("*")
 public class ContactController {
     @Autowired
     private ContactService contactService;

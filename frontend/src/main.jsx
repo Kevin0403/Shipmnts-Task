@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import {Form} from './components'
+import {Form, View} from './components'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 const routes = createBrowserRouter(
@@ -22,7 +22,7 @@ const routes = createBrowserRouter(
         },
         {
           path : "View",
-          element : <h1>View</h1>
+          element : <View />
         }
       ]
     }

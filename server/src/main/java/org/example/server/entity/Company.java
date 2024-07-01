@@ -19,77 +19,77 @@ public class Company {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        this.address = address;
     }
 
     public String getPhone() {
-        return Phone;
+        return phone;
     }
 
     public void setPhone(String phone) {
-        Phone = phone;
+        this.phone = phone;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getWebsite() {
-        return Website;
+        return website;
     }
 
     public void setWebsite(String website) {
-        Website = website;
+        this.website = website;
     }
 
     public int getEmployees() {
-        return Employees;
+        return employees;
     }
 
     public void setEmployees(int employees) {
-        Employees = employees;
+        this.employees = employees;
     }
 
     public Date getFoundedDate() {
-        return FoundedDate;
+        return foundedDate;
     }
 
     public void setFoundedDate(Date foundedDate) {
-        FoundedDate = foundedDate;
+        this.foundedDate = foundedDate;
     }
 
     public String getIndustryType() {
-        return IndustryType;
+        return industryType;
     }
 
     public void setIndustryType(String industryType) {
-        IndustryType = industryType;
+        this.industryType = industryType;
     }
 
-    private String Name;
-    private String Address;
-    private String Phone;
-    private String Email;
-    private String Website;
-    private int Employees;
+    private String name;
+    private String address;
+    private String phone;
+    private String email;
+    private String website;
+    private int employees;
 
     @Temporal(TemporalType.DATE)
-    private Date FoundedDate;
-    private String IndustryType;
+    private Date foundedDate;
+    private String industryType;
 }

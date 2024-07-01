@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface CompanyRepository extends JpaRepository<Company, Integer> {
 
-    @Query("SELECT c FROM Company c WHERE c.Name = :name")
+    @Query("SELECT c FROM Company c WHERE c.name = :name")
     public Company findByName(String name);
 }

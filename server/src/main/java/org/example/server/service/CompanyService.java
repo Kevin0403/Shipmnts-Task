@@ -31,7 +31,10 @@ public class CompanyService {
     }
 
     public boolean saveAll(List<Company> companies) {
-        companyRepository.saveAll(companies);
+        for(Company company : companies) {
+            save(company);
+            System.out.println(company.getName());
+        };
         return true;
     }
 
